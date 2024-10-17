@@ -397,7 +397,8 @@ a:hover {
   > .dropdown
   > li.has-children
   > .dropdown,
-.unslate_co--site-nav
+site-logo
+  .unslate_co--site-nav
   .site-nav-ul
   > li.has-children
   > .dropdown
@@ -2277,4 +2278,8 @@ span.error {
   height: 100%;
   border: 1px solid red;
   background: #000;
+}
+
+.site-logo .main-logo {
+  width: 100px;
 }

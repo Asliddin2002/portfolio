@@ -1165,9 +1165,17 @@ a:hover {
   text-align: center;
 }
 
+.cover-v1 .info {
+  margin-top: 480px;
+}
+
 @media (max-width: 991.98px) {
   .cover-v1 .heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  .cover-v1 .info {
+    margin-top: 280px;
   }
 }
 
@@ -2580,8 +2588,24 @@ span.error {
   width: 140px;
 }
 
+.site-logo .main-logo {
+  width: 150px;
+}
+
+.footer-logo .main-logo {
+  width: 100px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 991.98px) {
   .worked-for .logo {
     width: 80px;
+  }
+
+  .site-logo .main-logo {
+    width: 100px;
   }
 }
