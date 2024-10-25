@@ -7,6 +7,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "gilroy";
+  src: url("./vendor/icomoon/fonts/gilroy-extrabold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy-light";
+  src: url("./vendor/icomoon/fonts/gilroy-light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -1158,7 +1172,7 @@ a:hover {
 
 .cover-v1 .heading {
   font-size: 4rem;
-  /* font-family: "zuume"; */
+  font-family: "gilroy";
   font-weight: 900;
   letter-spacing: 5px;
   color: #fff;
@@ -1198,6 +1212,7 @@ a:hover {
 .cover-v1 .subheading {
   font-size: 33px;
   color: #fff;
+  font-family: "gilroy-light";
 }
 
 @media (max-width: 991.98px) {
