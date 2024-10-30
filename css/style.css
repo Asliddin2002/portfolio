@@ -21,6 +21,10 @@
   font-style: normal;
 }
 
+.gilroy-light {
+  font-family: "gilroy-light";
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -1443,9 +1447,13 @@ a:hover {
 .portfolio-item .portfolio-item-content,
 .blog-item .portfolio-item-content {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   left: 20px;
   right: 20px;
+  font-family: "gilroy-light";
+}
+.famouse-projects-title h3 {
+  font-size: 20px !important;
 }
 
 .blog-item .portfolio-item-content-inner {
@@ -1594,6 +1602,7 @@ a:hover {
   font-size: 32px;
   color: #fff;
   font-weight: 900;
+  font-family: "gilroy";
 }
 
 .heading-h2.divider:before {
@@ -2604,7 +2613,7 @@ span.error {
 }
 
 .site-logo .main-logo {
-  width: 150px;
+  width: 110px;
 }
 
 .footer-logo .main-logo {
