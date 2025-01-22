@@ -135,14 +135,13 @@
         <!-- END nav -->
 
         <div
-          class="cover-v1 jarallax overlay"
+          class="cover-v1 jarallax overlay category-details"
           id="home-section"
-          style="background-image: url('images/interior-design/main-img1.jpg')"
         >
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-10 mx-auto text-center">
-                <h1 class="heading" data-aos="fade-up">Livingroom</h1>
+                <h1 id="category-title" class="heading" data-aos="fade-up"></h1>
                 <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Minima, adipisci!
@@ -172,108 +171,10 @@
             <div class="portfolio-single-inner">
               <!-- <h2 class="heading-portfolio-single-h2">Reshape</h2> -->
 
-              <div class="row gutter-v4 align-items-stretch mb-5">
-                <div
-                  class="col-sm-6 col-md-6 col-lg-6 blog-post-entry gsap-reveal-img"
-                >
-                  <a
-                    href="product-details.html"
-                    class="grid-item blog-item w-100 h-100"
-                  >
-                    <!-- <div class="overlay">
-                      <div
-                        class="portfolio-item-content-inner"
-                        style="bottom: 0"
-                      >
-                        <h3>Livingroom design</h3>
-                      </div>
-                    </div> -->
-                    <img
-                      src="images/interior-design/main-img1.jpg"
-                      class="lazyload"
-                      alt="Image"
-                    />
-                  </a>
-                </div>
-                <div
-                  class="col-sm-6 col-md-6 col-lg-6 blog-post-entry gsap-reveal-img"
-                >
-                  <a
-                    href="product-details.html"
-                    class="grid-item blog-item w-100 h-100"
-                  >
-                    <!-- <div class="overlay">
-                      <div class="portfolio-item-content-inner">
-                        <h3>Bedroom design</h3>
-                      </div>
-                    </div> -->
-                    <img
-                      src="images/interior-design/main-img2.jpg"
-                      class="lazyload"
-                      alt="Image"
-                    />
-                  </a>
-                </div>
-
-                <div
-                  class="col-sm-6 col-md-6 col-lg-6 blog-post-entry gsap-reveal-img"
-                >
-                  <a
-                    href="product-details.html"
-                    class="grid-item blog-item w-100 h-100"
-                  >
-                    <!-- <div class="overlay">
-                      <div class="portfolio-item-content-inner">
-                        <h3>Kitchen design</h3>
-                      </div>
-                    </div> -->
-                    <img
-                      src="images/interior-design/main-img1.jpg"
-                      class="lazyload"
-                      alt="Image"
-                    />
-                  </a>
-                </div>
-                <div
-                  class="col-sm-6 col-md-6 col-lg-6 blog-post-entry gsap-reveal-img"
-                >
-                  <a
-                    href="interior-design.html"
-                    class="grid-item blog-item w-100 h-100"
-                  >
-                    <!-- <div class="overlay">
-                      <div class="portfolio-item-content-inner">
-                        <h3>Restaurant design</h3>
-                      </div>
-                    </div> -->
-                    <img
-                      src="images/interior-design/main-img2.jpg"
-                      class="lazyload"
-                      alt="Image"
-                    />
-                  </a>
-                </div>
-
-                <div
-                  class="col-sm-6 col-md-6 col-lg-6 blog-post-entry gsap-reveal-img"
-                >
-                  <a
-                    href="product-details.html"
-                    class="grid-item blog-item w-100 h-100"
-                  >
-                    <!-- <div class="overlay">
-                      <div class="portfolio-item-content-inner">
-                        <h3>Office design</h3>
-                      </div>
-                    </div> -->
-                    <img
-                      src="images/interior-design/main-img3.jpg"
-                      class="lazyload"
-                      alt="Image"
-                    />
-                  </a>
-                </div>
-              </div>
+              <div
+                class="row gutter-v4 align-items-stretch mb-5"
+                id="products-list-wraper"
+              ></div>
 
               <!-- <div class="row justify-content-between mb-5">
                 <div class="col-12 mb-5">
@@ -456,6 +357,7 @@
       <div class="site-loader"></div>
     </div>
 
+    <script src="api/product-list.js"></script>
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
   </body>
