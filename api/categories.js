@@ -20,13 +20,14 @@ async function fetchPortfolio() {
           }" class="grid-item blog-item w-100 h-100">
             <div class="overlay">
               <div class="portfolio-item-content">
-                <h3>${item?.name}</h3>
+                <h3>${item?.name[0].toUpperCase() + item?.name.slice(1)}</h3>
               </div>
             </div>
             <img
               src="${item?.img}"
               class="lazyload"
               alt="${item?.name}"
+              referrerpolicy="no-referrer"
             />
           </a>
         </div>

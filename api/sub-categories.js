@@ -35,16 +35,17 @@ async function renderProjectDetails(name) {
 
 // Fetch parent category
 async function fetchParentCategory(name) {
-  const apiEndpoint =
-    "https://portfolio-backend-h9yc.onrender.com/api/v1/design/categories";
+  const apiEndpoint = `https://portfolio-backend-h9yc.onrender.com/api/v1/design/categories`;
 
   try {
     showLoader(); // Show loader before fetching data
     const response = await fetch(apiEndpoint);
     const portfolioItems = await response.json();
 
+    const decodedParam = decodeURIComponent(name);
+
     const categoryGetByName = portfolioItems?.filter(
-      (item) => item?.name === name
+      (item) => item?.name === decodedParam
     );
 
     if (categoryGetByName.length) {
@@ -62,9 +63,9 @@ async function fetchParentCategory(name) {
 function renderBanner(categoryGetByName) {
   const categoriesInfo = document.querySelector(".category-details");
   const categoryTitle = document.getElementById("category-title");
-
   categoriesInfo.style.backgroundImage = `url(${categoryGetByName?.img})`;
-  categoryTitle.innerHTML = categoryGetByName?.name;
+  categoryTitle.innerHTML =
+    categoryGetByName?.name[0].toUpperCase() + categoryGetByName?.name.slice(1);
 }
 
 // Render sub-category list
@@ -87,13 +88,16 @@ function renderSubCategoryList(subCategories, name) {
                   >
                     <div class="overlay">
                       <div class="portfolio-item-content-inner">
-                        <h3>${item?.name}</h3>
+                        <h3>${
+                          item?.name[0].toUpperCase() + item?.name.slice(1)
+                        }</h3>
                       </div>
                     </div>
                     <img
                       src=${item?.img}
                       class="lazyload"
                       alt="Image"
+                      referrerpolicy="no-referrer"
                     />
                   </a>
             </div>

@@ -78,6 +78,7 @@ function renderProductList(data, name) {
                       src="${item?.img}"
                       class="lazyload"
                       alt="Image"
+                      referrerpolicy="no-referrer"
                     />
                   </a>
                 </div>

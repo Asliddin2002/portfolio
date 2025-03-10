@@ -65,6 +65,7 @@ function renderProduct(data) {
                           src="${item?.img}"
                           class="lazyload img-fluid"
                           alt="Images"
+                          referrerpolicy="no-referrer"
                         />
                       </a>
                     </div>
